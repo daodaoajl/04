@@ -3,20 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-  unsigned int x;
-  int b;
+  int x;
+  printf("input seconds :");
+  scanf("%i", &x);
   
-  printf("input a number :");
-  scanf("%ui", &x);
-  
-  for (b = 0; x != 0; x >>= 1) // x = x >> 1
-  {
-      if(x&1)
-      {
-       b++;
-      }      
-  }
-  printf("The result is : %i\n", b);
+  printf("%i seconds - %i:%i:%i\n", x, x/3600, ((x%3600)/60), x%60);
   
   system("PAUSE");	
   return 0;
