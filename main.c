@@ -7,11 +7,11 @@ int main(int argc, char *argv[])
   printf("input two integers :");
   scanf("%i %i", &x,&y);
   
-  printf("+ result is %d\n",x+y);
-  printf("- result is %d\n",x-y);
-  printf("* result is %d\n",x*y);
-  printf("/ result is %d\n",x/y);
-  printf("%% result is %d\n",x%y);
+  printf("+ result is %i\n",x+y);
+  printf("- result is %i\n",x-y);
+  printf("* result is %i\n",x*y);
+  printf("/ result is %i\n",x/y);
+  printf("%% result is %i\n",x%y);
   
   system("PAUSE");	
   return 0;
