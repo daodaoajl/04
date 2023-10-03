@@ -3,18 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-  int x;
-  printf("input a year :");
-  scanf("%i", &x);
+  unsigned int x;
+  int b;
   
-  if( (x%4 == 0 && x%100 != 0) || (x%400 == 0))
+  printf("input a number :");
+  scanf("%ui", &x);
+  
+  for (b = 0; x != 0; x >>= 1) // x = x >> 1
   {
-      printf("%i is leap year.\n", x);   
+      if(x&1)
+      {
+       b++;
+      }      
   }
-  else
-  {
-      printf("%i is not leap year.\n", x);   
-  }
+  printf("The result is : %i\n", b);
   
   system("PAUSE");	
   return 0;
